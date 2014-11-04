@@ -21,8 +21,9 @@ class AddStudentPage_Controller extends Page_Controller{
             new TextField('Passport No'),
             new TextField('DOB'),
             new TextField('Email'),
-            new TextField('Contect No')
-            ); 
+            new TextField('Contect No'),
+            new UploadField('Photo')
+                        ); 
         $actions = new FieldList( 
             new FormAction('submit', 'Submit') 
         ); 
